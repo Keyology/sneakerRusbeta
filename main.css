@@ -1,0 +1,730 @@
+.navbar {
+  z-index: 10;
+  width: 100%;
+
+}
+
+.nav-links {
+  height: 50px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+
+}
+
+.nav-btn {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  margin-left: 2rem;
+  transition: all 200ms;
+
+
+}
+
+.nav-btn hover {
+  transform: scale(1.1);
+
+}
+
+.nav-btn.logo {
+  transition: all 300ms;
+}
+
+.nav-btn.right:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.nav-btn.right {
+  margin-left: 85%;
+  transition: all 300ms;
+}
+
+.nav-btn.right:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+
+  height: calc(99vh - 50px);
+  width: 100%;
+  background: linear-gradient(rgba(44, 62, 80, .3), rgba(44, 62, 80, .3)), url(https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.hero-overlay-text {
+  z-index: 5;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-overlay-text h1 {
+  margin-top: 0rem;
+  font-size: 10rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.call-to-action-btn {
+  background-color: rgba(253, 253, 253, 1);
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #C1C1C1;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+  transition: all 200ms;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, .3);
+}
+
+.call-to-action-btn:hover {
+  /*transform: scale(1.02);*/
+  box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+}
+
+.clients {
+  height: 10rem;
+  width: 100%;
+  background: #ecf0f1;
+}
+
+.client-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.clients-header {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: roboto;
+  font-weight: 400;
+}
+
+.clients-images img {
+  transition: all 200ms;
+
+}
+
+.client-images img:hover {
+  transform: scale(1.2);
+
+}
+
+.subscribe {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/637076/pexels-photo-637076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+
+}
+
+.subscribe h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: roboto;
+  font-weight: 300;
+
+}
+
+.subscribe h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: roboto;
+  font-weight: 200;
+}
+
+.email-input {
+  border-radius: 4px;
+  border: solid 1px gray;
+  font-size: 2rem;
+  padding: .3rem;
+  padding-left: 1rem;
+  transition: all 200ms;
+
+}
+
+.email-sub {
+  margin-left: 1rem;
+  font-size: 2rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: #e74c3c;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.email-input:hover {
+  transform: scale(1.05);
+
+}
+
+.email-sub:hover {
+  transform: scale(1.05);
+}
+
+.gallery-sec {
+  /*padding: .3rem;*/
+  margin-right: .3rem;
+  height: 130vh;
+  background: #ecf0f1;
+  height: 130vh;
+  width: 100%;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gallery {
+  height: 100%;
+  width: 90%;
+  /*overflow-x: hidden;*/
+  display: grid;
+  grid-gap: 10px;
+  perspective: 800px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.panel {
+  /* needed for the flex layout*/
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, .3);
+  transition: all 300ms;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel:hover {
+  transform: scale(1.01) translateY(-5px) rotateX(10deg) rotateY(2deg) skewY(4deg);
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, .5);
+  z-index: 3;
+}
+
+
+.tall-panel {
+  grid-row-end: span 2;
+}
+
+.g-header {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.gallery>* {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.g-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.a {
+  background: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.b {
+  background: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.c {
+  background: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: -70px;
+}
+
+.d {
+  background: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.e {
+  background: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.f {
+  background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-position: -40px;
+}
+
+
+.g {
+  background: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: -100px;
+}
+
+.h {
+  background: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.i {
+  background: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.j {
+  background: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: 0px -60px;
+}
+
+.panel div {
+  background: rgba(0, 0, 0, .3);
+  padding: 5px;
+  color: white;
+}
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
+@supports (display: grid) {
+  .gallery>* {
+    margin: 0;
+  }
+}
+
+.panel:hover {
+  transform: scale(1.01) translateY(-5px) rotateX(10deg) rotateY(2deg) skewY(4deg);
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, .5);
+  z-index: 3;
+}
+
+.subscribe-2 {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/450059/pexels-photo-450059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+.testi-title {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.tests {
+  position: absolute;
+  width: 300%;
+  display: flex;
+  transition: all 400ms;
+
+}
+
+.tests.first {
+  right: -200%;
+
+}
+
+.tests.second {
+  right: -100%;
+
+}
+
+.tests.third {
+  right: 0%;
+
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.test1 {
+  position: absolute;
+  left: 0;
+}
+
+.test2 {
+  position: absolute;
+  left: 33%;
+}
+
+.test3 {
+  position: absolute;
+  left: 66%;
+}
+
+
+.testi-image {
+  border: solid 8px white;
+  border-radius: 50%;
+  height: 272px;
+  width: 272px;
+}
+
+.testi-quote {
+  margin-top: 1rem;
+  border: solid 15px white;
+  border-radius: 2px;
+  background: white;
+}
+
+.testi-quote p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dots {
+  align-self: baseline;
+  margin-top: 28rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  border: solid 1px black;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  margin-right: 1rem;
+  transition: all 200ms;
+}
+
+.dot:hover {
+  background: black;
+}
+
+.subscribe-3 {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.faq {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq-container {
+  width: 60%;
+}
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faqpanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.footer {
+  height: 30vh;
+  margin: 0;
+  background: #34495e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.footer-copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.more-links {
+  cursor: pointer;
+}
+
+.nav-btn.right {
+  margin-left: 80%;
+  /*made this smaller*/
+  transition: all 300ms;
+}
+
+
+.nav-links {
+  height: 50px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: roboto;
+  /*made font-family roboto*/
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  /*If you don't have this, add it in! */
+  overflow-x: hidden;
+}
+
+/*everything below this line*/
+
+/*******
+Popup
+********/
+
+
+.pop-up-layer {
+  opacity: 0%;
+  display: none;
+  /*we will change this with javascript*/
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(44, 62, 80, .6);
+  /*this is our overlay color*/
+  z-index: 100;
+  /*makes our layer above the rest of the page.*/
+}
+
+.pop-up {
+  position: fixed;
+  /*this makes our pop-up attached to the screen*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /*aligns our popup to the center*/
+  height: 15rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  border-radius: 16px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, .3);
+  z-index: 10000000;
+  /*Makes our pop-up above everything*/
+  animation: hop-down;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.pop-up-title {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  background: white;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  font-family: roboto;
+}
+
+.pop-up-sub {
+  padding-top: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-family: roboto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  /* we put this button at */
+  right: 0rem;
+  /* the top right */
+  margin-top: 0rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  font-size: 20px;
+  transition: all 200ms;
+  cursor: pointer;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-right: 9px;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+}
