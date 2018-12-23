@@ -1,73 +1,126 @@
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
+    <title>Sneaker R us signup</title>
+</head>
+<body>
 
-<form class="form-horizontal" action='' method="POST">
-    <fieldset>
-        <div id="legend">
-            <legend class="">Register</legend>
-        </div>
-        <div class="control-group">
-            <!-- Username -->
-            <label class="control-label" for="username">Name</label>
-            <div class="controls">
-                <input type="text" id="username" name="username" placeholder="Name" class="input-xlarge">
-                <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+        <form class="form-horizontal" action="/signup" method="post">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>Sneaker R us Betat Signup</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="fn"> name</label>  
+              <div class="col-md-4">
+              <input id="fn" name="name" type="text" placeholder="name" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-        <div class="control-group">
-            <!-- E-mail -->
-            <label class="control-label" for="email">E-mail</label>
-            <div class="controls">
-                <input type="text" id="email" name="email" placeholder="E-mail" class="input-xlarge">
-                <p class="help-block">Please provide your buisness E-mail</p>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="ig">Instagram handle</label>  
+              <div class="col-md-4">
+              <input id="ig" name="igh" type="text" placeholder="instagram handle" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-        <div class="control-group">
-            <!-- Password-->
-            <label class="control-label" for="address">Address</label>
-            <div class="controls">
-                <input type="text" id="address" name="address" placeholder="Address" class="input-xlarge">
-                <p class="help-block">Please enter address</p>
+            
+            
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="cmpny">store name</label>  
+              <div class="col-md-4">
+              <input id="cmpny" name="storeName" type="text" placeholder="store name" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-        <div class="control-group">
-            <!-- Password-->
-            <label class="control-label" for="phone-number">Phone number</label>
-            <div class="controls">
-                <input type="text" id="phonenumber" name="phonenumber" placeholder="phone number" class="input-xlarge">
-                <p class="help-block">Please enter Phone number</p>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="email">Email</label>  
+              <div class="col-md-4">
+              <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-        <div class="control-group">
-            <!-- Password-->
-            <label class="control-label" for="store-name">store name</label>
-            <div class="controls">
-                <input type="text" id="store name" name="storeName" placeholder="store name" class="input-xlarge">
-                <p class="help-block">Please enter store name</p>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="add1"> Street Address </label>  
+              <div class="col-md-4">
+              <input id="add1" name="address" type="text" placeholder="enter street address" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-        <div class="control-group">
-
-            <label class="control-label" for="store-name">instagram handle</label>
-            <div class="controls">
-                <input type="text" id="instagram-handle" name="instagram-handle" placeholder="Instagram handle" class="input-xlarge">
-                <p class="help-block">Please enter instagram handle</p>
+            
+            
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="city">City</label>  
+              <div class="col-md-4">
+              <input id="city" name="city" type="text" placeholder="city" class="form-control input-md" required="">
+                
+              </div>
             </div>
-        </div>
-
-
-        <div class="control-group">
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="zip">Zip Code</label>  
+              <div class="col-md-4">
+              <input id="zip" name="zip" type="text" placeholder="Zip Code" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="ctry">Country</label>  
+              <div class="col-md-4">
+              <input id="ctry" name="ctry" type="text" placeholder="Country" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+              <div class="col-md-4">
+              <input id="phone" name="phone" type="text" placeholder="Phone number#" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
             <!-- Button -->
-            <div class="controls">
-                <button class="btn btn-success">Register</button>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="submit"></label>
+              <div class="col-md-4">
+                <button type='submit' id="submit" name="submit" class="btn btn-primary">SUBMIT</button>
+              </div>
             </div>
-        </div>
-    </fieldset>
-</form>
+            
+            </fieldset>
+            </form>
+            
+    
+</body>
+</html>
