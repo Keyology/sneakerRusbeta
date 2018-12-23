@@ -1,7 +1,13 @@
 const Busisness = require('../models/business');
 const mongoose = require('mongoose');
 
+
+
+
+
 module.exports = (app) => {
+
+
 
     app.get('/', (req, res) => {
         // get and render html to client

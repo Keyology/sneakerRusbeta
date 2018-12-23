@@ -22,8 +22,10 @@
   "homepage": "https://github.com/Keyology/sneakerRusbeta#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.4.0"
+    "mongoose": "^5.4.0",
+    "paypal-rest-sdk": "^1.8.1"
   }
 }
