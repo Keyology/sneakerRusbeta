@@ -1,3 +1,5 @@
+
+
 module.exports = (app) => {
 
     app.get('/', (req, res) => {
@@ -10,4 +12,6 @@ module.exports = (app) => {
         // get and render signup page
         res.render('signup')
     });
+
+
 }
