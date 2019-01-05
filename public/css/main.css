@@ -57,7 +57,7 @@ body {
 
   height: calc(99vh - 50px);
   width: 100%;
-  background: linear-gradient(rgba(44, 62, 80, .3), rgba(44, 62, 80, .3)), url(https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background: linear-gradient(rgba(44, 62, 80, .3), rgba(44, 62, 80, .3)), url(https://cdn2.straatosphere.com/wp-content/uploads/2014/11/sneaker-artists-featured4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -727,7 +727,8 @@ Popup
 .info {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-
+  color: black;
+  
 }
 
 .infoheading {
@@ -736,7 +737,7 @@ Popup
 
 .infoparagraph {
   width: 400px;
-  color: black;
+  /* color: black; */
   /* padding: 25px; */
   font-size: 20px;
   font-style: italic;
